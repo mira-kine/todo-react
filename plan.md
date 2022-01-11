@@ -25,17 +25,17 @@ user.js
 ### States:
 
 - [x] email
-- [ ] password
-- [ ] error message
-- [ ] type (of user state, aka sign in or sign up)
+- [x] password
+- [x] error message
+- [x] type (of user state, aka sign in or sign up)
 
 ### Views
 
-- [ ] Auth.js that toggles between sign up and sign in depending on userstatus
+- [x] Auth.js that toggles between sign up and sign in depending on userstatus
 
 ### Components
 
-- [ ] AuthForm.js
+- [x] AuthForm.js
 
 ## To-do page
 
