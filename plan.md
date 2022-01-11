@@ -2,12 +2,32 @@
 
 ## App.js
 
+- [x] Routes "/" that switches between sign in/sign up according to user status
+- [ ] Route "/todo" that shows the todo list view once user has signed in
+
+## services
+
+user.js
+
+- [x] getUser
+- [x] signInUser
+- [x] signUpUser
+- [x] logout
+      todo.js
+- [x] createToDo
+- [ ] complete todos
+- [ ] update todos
+- [ ] view todos
+- [ ] delete tasks (stretch goal)
+
 ## Authorization/Authentication
 
 ### States:
 
-- email
-- password
+- [x] email
+- [ ] password
+- [ ] error message
+- [ ] type (of user state, aka sign in or sign up)
 
 ### Views
 
@@ -22,7 +42,9 @@
 ### States
 
 - tasks
-  - add, complete, delete, see list rendered
+  - add
+  - complete
+  - delete (stretch)
 
 ### Views
 
@@ -30,4 +52,6 @@
 
 ### Components
 
-- [ ] List.js that renders list added
+- [ ] List.js that renders list added -> events submit form = add new task
+  - click to complete = delete task, update task as completed
+- [ ] update task = click to update (stretch)
