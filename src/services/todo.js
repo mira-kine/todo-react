@@ -14,3 +14,8 @@ export async function updateTask(task) {
   const resp = await client.from('todos').update(task).eq('id', task.id);
   return checkError(resp);
 }
+
+export async function completedTask(id, is_complete) {
+  const resp = await client.from('todos').update({ is_complete: is_complete }).eq('id', id);
+  return checkError(resp);
+}

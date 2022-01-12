@@ -16,7 +16,7 @@ user.js
       todo.js
 - [x] createToDo
 - [ ] complete todos - is_complete boolean true or false
-- [x] update todos - fetch Tasks and then reupdate them using .update
+- [ ] update todos - fetch Tasks and then reupdate them using .update
 - [x] view todos (fetchTasks)
 - [ ] delete tasks (stretch goal) - using .delete
 
