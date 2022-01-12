@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+input li {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+}

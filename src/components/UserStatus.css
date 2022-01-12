@@ -1,0 +1,14 @@
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.options h2 {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.options h2.active {
+  border: black 1px solid;
+}
