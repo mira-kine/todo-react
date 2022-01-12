@@ -1,11 +1,12 @@
 import React from 'react';
 import './Todo.css';
 
-export default function List({ list, handleClick }) {
+export default function List({ list, handleClick, handleDelete }) {
   return (
     <>
+      <h3>To Do:</h3>
       {list.map((item) => (
-        <div className="tasks" key={item.id}>
+        <ul className="tasks" key={item.id}>
           <label>
             <li className="list-item">
               <input
@@ -15,10 +16,11 @@ export default function List({ list, handleClick }) {
                   handleClick(item);
                 }}
               />
+              {item.task}
             </li>
-            {item.task}
           </label>
-        </div>
+          <button onClick={handleDelete}>Delete</button>
+        </ul>
       ))}
     </>
   );

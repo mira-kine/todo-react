@@ -15,7 +15,7 @@ user.js
 - [x] logout
       todo.js
 - [x] createToDo
-- [ ] complete todos - is_complete boolean true or false
+- [x] complete todos - is_complete boolean true or false
 - [ ] update todos - fetch Tasks and then reupdate them using .update
 - [x] view todos (fetchTasks)
 - [ ] delete tasks (stretch goal) - using .delete
@@ -44,7 +44,7 @@ user.js
 - tasks
   - [x] add
   - [x] complete
-  - delete (stretch)
+  - [ ] delete (stretch)
 
 ### Views
 

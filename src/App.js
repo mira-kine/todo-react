@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/">
             {currentUser && (
               <>
-                <div>
+                <div className="to-do">
                   <Todo />
                 </div>
                 <button onClick={logOut}>Log Out</button>

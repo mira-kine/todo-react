@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { createToDo, fetchTasks, completedTask } from '../../services/todo.js';
+import { createToDo, fetchTasks, completedTask, deleteTask } from '../../services/todo.js';
 import Input from '../../components/Input.js';
 import List from '../../components/List.js';
 
@@ -41,10 +41,22 @@ export default function Todo() {
     setList(resp);
   };
 
+  const handleDelete = async (e) => {
+    e.preventDefault;
+    try {
+      await deleteTask(task.id);
+      alert('You successfully deleted your task');
+      const resp = await fetchTasks();
+      setList(resp);
+    } catch (e) {
+      alert('failed to delete');
+    }
+  };
+
   return (
-    <div>
-      <List list={list} handleClick={handleClick} />
+    <>
+      <List list={list} handleClick={handleClick} handleDelete={handleDelete} />
       <Input handleSubmit={handleSubmit} setTask={setTask} task={task} />
-    </div>
+    </>
   );
 }
