@@ -5,7 +5,7 @@ import Input from '../../components/Input.js';
 import List from '../../components/List.js';
 
 export default function Todo() {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState('');
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);
   // setNewTask
@@ -44,7 +44,7 @@ export default function Todo() {
   return (
     <div>
       <List list={list} handleClick={handleClick} />
-      <Input handleSubmit={handleSubmit} setTask={setTask} />
+      <Input handleSubmit={handleSubmit} setTask={setTask} task={task} />
     </div>
   );
 }
